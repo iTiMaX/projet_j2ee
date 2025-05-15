@@ -26,7 +26,7 @@ echo "JAVA_HOME:$JAVA_HOME"
 sudo apt install -y maven
 # Configuration de Maven dans le PATH système
 rm /etc/profile.d/maven.sh
-echo "export M2_HOME=/usr/local/src/apache-maven" > /etc/profile.d/maven.sh
+echo "export M2_HOME=/usr/share/maven" > /etc/profile.d/maven.sh
 echo "export PATH=\${M2_HOME}/bin:\${PATH}" >> /etc/profile.d/maven.sh
 chmod +x /etc/profile.d/maven.sh
 source /etc/profile.d/maven.sh
